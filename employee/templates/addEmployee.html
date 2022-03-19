@@ -34,16 +34,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for student in students %}
+                    {% for employee in employees %}
                     <tr>
-                        <td>{{ student.student_id }}</td>
-                        <td>{{ student.name|title }}</td>
-                        <td>{{ student.email }}</td>
-                        <td>{{ student.phone_number }}</td>
+                        <td>{{ employee.employee_id }}</td>
+                        <td>{{ employee.name|title }}</td>
+                        <td>{{ employee.email }}</td>
+                        <td>{{ employee.phone_number }}</td>
                         <td>
                             <a href=""><i class="fas fa-edit p-2"></i></a>
                             <a href=""
-                                onclick="return confirm('Are you sure you want to delete {{student.name|title}}?')"><i
+                                onclick="return confirm('Are you sure you want to delete {{employee.name|title}}?')"><i
                                     class="fa fa-trash text-danger p-2"></i></a>
                         </td>
                     </tr>

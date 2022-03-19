@@ -20,3 +20,19 @@ def add_employee(request):
 
 
     return render(request, 'addEmployee.html',{'employees':employees,'form':form,'title':title})
+
+def update_employee(request,id):
+    employees = Employee.objects.all()
+    title ="UPDATE STUDENT"
+    employee = Employee.objects.get(id=id)
+    if request.method == 'POST':
+        form = EmployeeForm(request.POST,instance = employee)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse("home"))
+
+    else:
+        form = EmployeeForm(instance = employee)
+
+
+    return render(request, 'update_employee.html',{'form':form,'employees':employees,'title':title})
