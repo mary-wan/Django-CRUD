@@ -35,6 +35,19 @@ $ pip install -r requirements.txt
 
 ```
 * Open project in editor
+* Create .env file, paste the code below and fill in the database details 
+```
+    SECRET_KEY=''
+    DEBUG= True
+    DB_NAME=''
+    DB_USER=''
+    DB_PASSWORD=''
+    DB_HOST='127.0.0.1'
+    MODE='dev'
+    ALLOWED_HOSTS='*'
+    DISABLE_COLLECTSTATIC=1
+```
+
 
 ### Running the Application
 To view the website run the command
