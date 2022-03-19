@@ -1,0 +1,12 @@
+.display{
+    border: solid 2px;
+    border-color: black;
+    background-color: #b1babd;
+}
+.submit{
+    margin-left: 40px !important;
+}
+.vl{
+    border-left: 6px solid green;
+    height: inherit;
+}
