@@ -6,3 +6,6 @@ class Employee(models.Model):
     name = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=15)
+
+    class Meta:
+        ordering = ['pk']

@@ -40,7 +40,7 @@
             <td>{{ employee.phone_number }}</td>  
             <td>  
                 <a href="{% url 'updateEmployee' employee.id %}"><i class="fas fa-edit p-2"></i></a>  
-                <a href=""  onclick="return confirm('Are you sure you want to delete {{employee.name|title}}?')"><i class="fa fa-trash text-danger p-2"></i></a>  
+                <a href="{% url 'deleteEmployee' employee.id %}"  onclick="return confirm('Are you sure you want to delete {{employee.name|title}}?')"><i class="fa fa-trash text-danger p-2"></i></a>  
             </td>  
         </tr>  
     {% endfor %}  
