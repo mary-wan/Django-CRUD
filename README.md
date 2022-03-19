@@ -39,6 +39,8 @@ $ pip install -r requirements.txt
 ### Running the Application
 To view the website run the command
 ```
+$ python3 manage.py migrate
+
 $ python3 manage.py runserver
 
 
