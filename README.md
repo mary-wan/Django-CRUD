@@ -13,7 +13,7 @@
  Simple web application with CRUD funtionalities that keeps track of employees.
 
 ## Live link
-[View site](https://employeecrud.herokuapp.com/)
+[View site](https://employeecrud1.herokuapp.com/)
 
 ## How it works 
 * Fill the form to add an employee
